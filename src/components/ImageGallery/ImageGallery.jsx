@@ -7,5 +7,5 @@ export function ImageGallery({ children }) {
 }
 
 ImageGallery.prototype = {
-  children: PropTypes.any.isRequired,
+  children: PropTypes.object.isRequired,
 };

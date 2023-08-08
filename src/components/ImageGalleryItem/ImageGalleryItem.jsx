@@ -23,7 +23,11 @@ export function ImageGalleryItem({
 }
 
 ImageGalleryItem.propTypes = {
-  img: PropTypes.object.isRequired,
+  img: PropTypes.shape({
+    webformatURL: PropTypes.string.isRequired,
+    tags: PropTypes.string.isRequired,
+    largeImageURL: PropTypes.string.isRequired,
+  }).isRequired,
   toggleModal: PropTypes.func.isRequired,
   setModalImg: PropTypes.func.isRequired,
 };
